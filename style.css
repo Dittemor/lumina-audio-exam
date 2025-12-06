@@ -298,6 +298,8 @@ html {
     font-family: 'inter';
 }
 
+
+
 /* Product section */
 .product-section {
   background: #f0f0f0ce;
@@ -472,6 +474,7 @@ html {
 }
 
 
+
 /*Review-section*/
 
 .reviews {
@@ -568,5 +571,58 @@ html {
 .reviews-btn:hover {
     background-color: rgba(68, 67, 67, 0.784);
 }
+
+.text-section h3{
+    font-family: 'inter';
+    font-weight: 300;
+    margin-top: -20px;
+    margin-left: 50px; 
+    text-align: center;
+    font-size: 18px;
+    text-align: left; 
+}
+
+.text-section p {
+    margin-top: 20px;
+    margin-left: 50px; 
+    font-family: 'cormorant garamond';
+    font-size: 35px;
+    font-weight: 650;
+    text-align: left;
+    max-width: 760px;  
+    text-align: left;  
+    line-height: 1.2;  
+    
+}
+
+
+/* GALLERY */
+.gallery {
+  overflow-x: scroll;     
+  overflow-y: hidden;      
+  white-space: nowrap;      
+  scroll-behavior: smooth;  
+  margin-top: 40px;
+  display: flex;
+  cursor: grab;            
+}
+
+.gallery-track {
+  display: flex;
+  gap: 0px;                
+}
+
+.gallery img {
+  height: 600px;            
+  flex: 0 0 auto;          
+  object-fit: cover;
+  user-select: none;        
+}
+
+.gallery:active {
+  cursor: grabbing;
+}
+
+
 
 
