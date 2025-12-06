@@ -19,8 +19,25 @@ document.addEventListener('click', (e) => {
     }
 }); 
 
+// Color-pickers
 
+const dots = document.querySelectorAll(".color-dot");
+const speakerImage = document.getElementById("speakerImage");
 
+dots.forEach(dot => {
+  dot.addEventListener("click", () => {
+    const imgPath = dot.dataset.img;
+
+    speakerImage.style.opacity = 0;
+    setTimeout(() => {
+      speakerImage.src = imgPath;
+      speakerImage.style.opacity = 1;
+    }, 200);
+
+    dots.forEach(d => d.classList.remove("active"));
+    dot.classList.add("active");
+  });
+}); 
 
 
 

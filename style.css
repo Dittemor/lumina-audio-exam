@@ -298,4 +298,177 @@ html {
     font-family: 'inter';
 }
 
+/* Product section */
+.product-section {
+  background: #f0f0f0ce;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 80px 50px;
+}
+
+.product-image img {
+  width: 600px;
+  transition: opacity 0.3s ease;
+  margin-left: 80px; 
+  margin-top: 80px;
+}
+
+/*right side*/
+.product-right {
+  flex: 0.9;
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-right .product-subtitle {
+  font-size: 18px;
+  color: #2f2f2f;
+  margin-bottom: 10px;
+  font-family: 'inter'; 
+  font-weight: 300;
+}
+
+.product-right .product-title {
+  font-size: 36px;
+  font-family: 'poppins';
+  font-weight: 450;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.product-right .divider {
+  border: none;
+  border-top: 1px solid #d6d6d6;
+  margin: 26px 0;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.feature-item {
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+  max-width: 85px;
+}
+
+.feature-item p {
+  margin-top: 10px;
+  font-family: 'cormorant garamond';
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.feature-item img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 8px;
+}
+
+.product-right .price {
+  font-size: 32px;
+  font-weight: 450;
+  margin-bottom: 24px;
+  font-family: 'poppins';
+}
+
+.btn-primary {
+  width: 100%;
+  padding: 16px;
+  background: black;
+  color: white;
+  border: 2px solid black;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 16px;
+}
+
+.btn-primary:hover {
+  background: #fff;
+  color: #000000;
+  border: 2px solid black;
+  border-radius: 30px;
+}
+
+.btn-secondary {
+  width: 100%;
+  padding: 16px;
+  background: #fff;
+  border: 2px solid black;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background: #000;
+  color: #fff;
+}
+
+.benefits {
+  list-style: none;
+  padding: 0;
+  margin-top: 26px;
+  font-size: 15px;
+  color: #333;
+}
+
+.benefits li {
+  margin-bottom: 6px;
+}
+
+/*Color-pickers*/
+.color-options {
+  list-style: none;
+  padding: 0;
+  transform: translate(200px, 150px);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 70px;
+}
+
+.color-dot {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid #000; 
+  cursor: pointer;
+  background: transparent;
+  padding: 0;
+  position: relative;
+  transition: transform 0.2s ease;
+}
+
+.color-dot::before {
+  content: "";
+  position: absolute;
+  inset: 4px; 
+  border-radius: 50%;
+  background-color: var(--color);
+  transition: all 0.25s ease;
+}
+
+
+.color-dot:hover::before {
+  inset: 0;
+}
+.color-dot.active::before {
+  inset: 0;
+}
+.color-dot:hover {
+  transform: scale(1.1);
+}
+.color-dot.active {
+  transform: scale(1.12);
+}
+
 
