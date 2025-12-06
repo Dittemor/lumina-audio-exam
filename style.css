@@ -1,6 +1,4 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* CSS reset */
@@ -39,17 +37,7 @@ html {
     list-style: none; 
     margin: 0;
     padding: 0;
-}
-
-.nav-left li, .nav-right li {
-    position: relative;
 } 
-
-.nav-left,
-.nav-right,
-.logo {
-    text-decoration: none;
-}
 
 .top-nav button {
     position: relative;
@@ -175,29 +163,6 @@ html {
 .search-container.active .search-input {
     width: 150px;
     opacity: 1;
-}
-
-.cart-icon {
-    position: relative;
-    display: inline-block;
-}
-
-#cart-count {
-    position: absolute;
-    top: -5px;
-    right: -5px;
-    background: #191919; 
-    color: white;
-    border-radius: 50%;
-    padding: 4px 7px;
-    font-size: 12px;
-    font-weight: bold;
-    line-height: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 20px;
-    min-height: 20px;
 }
 
 
@@ -391,6 +356,7 @@ html {
   font-size: 16px;
   cursor: pointer;
   margin-bottom: 16px;
+  font-family: 'inter';
 }
 
 .btn-primary:hover {
@@ -408,6 +374,7 @@ html {
   border-radius: 30px;
   font-size: 16px;
   cursor: pointer;
+  font-family: 'inter';
 }
 
 .btn-secondary:hover {
