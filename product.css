@@ -155,3 +155,166 @@ body {
   transition: transform 0.2s ease;
 }
 
+/*Product*/
+.product-page {
+  max-width: 1440px;
+  margin: 40px auto;
+  margin-top: 150px;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.product-image img {
+  width: 100%;
+  max-width: 400px;
+  margin-left: 100px;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.title {
+  font-size: 35px;
+  font-family: 'Poppins';
+  font-weight: 500;
+  color: #111111;
+  margin-top: 18px;
+}
+
+.subtitle {
+    font-size: 15px;
+    font-family: 'Inter';
+    font-weight: 400;
+    color: #1b1b1b;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 8px;
+}
+
+.description {
+  font-size: 18px;
+  font-family: 'cormorant garamond';
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  margin-top: 18px;
+}
+
+/*Color picker*/
+.color-picker {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin: 40px 0;
+  margin-left: 100px;
+  min-width: 140px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.color-dot {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 2px solid #000; 
+  cursor: pointer;
+  background: transparent;
+  padding: 0;
+  position: relative;
+  transition: transform 0.2s ease;
+}
+
+.color-dot::before {
+  content: "";
+  position: absolute;
+  inset: 4px; 
+  border-radius: 50%;
+  background-color: var(--color);
+  transition: all 0.25s ease;
+}
+
+.color-dot:hover::before {
+  inset: 0;
+}
+.color-dot.active::before {
+  inset: 0;
+}
+.color-dot:hover {
+  transform: scale(1.1);
+}
+.color-dot.active {
+  transform: scale(1.12);
+}
+
+.color-name {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'cormorant garamond';
+  min-width: 110px;
+  position: relative;
+  left: -100px;
+}
+
+.feature svg {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+  font-size: 15px;
+}
+
+/*Price & CTA*/
+.price {
+  font-size: 30px;
+  font-family: 'Poppins';
+  font-weight: 500; 
+  margin-top: 20px;
+}
+
+.cta-btn {
+  width: 60%;
+  padding: 16px;
+  background: black;
+  color: white;
+  border: 2px solid black;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 16px;
+  margin-top: 20px;
+  align-items: baseline;
+}
+
+.cta-btn:hover { 
+  background: #fff;
+  color: #000000;
+  border: 2px solid black;
+  border-radius: 30px;
+}
+
+.extras {
+  display: flex;
+  flex-direction: column; 
+  gap: 6px;  
+  font-family: 'cormorant garamond';
+  font-size: 16px;             
+}
+
+.extras span {
+  display: block;
+}
