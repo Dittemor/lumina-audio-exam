@@ -39,3 +39,21 @@ dots.forEach(dot => {
     colorName.textContent = name;
   });
 }); 
+
+/* Fold-menu */
+const menuTitles = document.querySelectorAll('.menu-title');
+
+menuTitles.forEach(header => {
+  header.addEventListener('click', () => {
+    const content = header.nextElementSibling;
+    const plus = header.querySelector('.plus');
+
+    if (content.style.maxHeight) {
+      content.style.maxHeight = null;
+      plus.textContent = '+';
+    } else {
+      content.style.maxHeight = content.scrollHeight + 'px';
+      plus.textContent = '–';
+    }
+  });
+});
