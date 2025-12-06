@@ -39,6 +39,40 @@ dots.forEach(dot => {
   });
 }); 
 
+// Review slider
+
+const track = document.querySelector('.reviews-track');
+const slides = document.querySelectorAll('.reviews-box');
+const prevBtn = document.querySelector('.prev');
+const nextBtn = document.querySelector('.next');
+
+let index = 0;
+
+function updateSlider() {
+    track.style.transform = `translateX(-${index * 100}%)`;
+}
+
+nextBtn.addEventListener('click', () => {
+    index++;
+
+    if (index >= slides.length) {
+        index = 0;
+    }
+
+    updateSlider();
+});
+
+prevBtn.addEventListener('click', () => {
+    index--;
+
+    if (index < 0) {
+        index = slides.length - 1;
+    }
+
+    updateSlider();
+});
+
+
 
 
 
