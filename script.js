@@ -55,11 +55,33 @@ document.addEventListener('click', (e) => {
 
 
   exploreBtn.addEventListener("click", () => {
-    const productSection = document.getElementById("product-info"); 
+    const productSection = document.getElementById("product-section"); 
     productSection.scrollIntoView({ behavior: "smooth" });
   });
 
 
+// "Added to cart" message 
+document.querySelectorAll(".btn-primary").forEach(button => {
+  
+  button.addEventListener("click", () => {
+    let oldMessage = button.closest(".cart-btn-wrapper").querySelector(".added-message")
+    if (oldMessage) oldMessage.remove();
+
+    const msg = document.createElement("span");
+    msg.classList.add("added-message");
+    msg.innerHTML = "✔ Tilføjet";
+
+    button.closest(".cart-btn-wrapper").appendChild(msg);
+
+    setTimeout(() => msg.classList.add("visible"), 10);
+
+    setTimeout(() => {
+      msg.classList.remove("visible");
+      setTimeout(() => msg.remove(), 300);
+    }, 2500);
+  });
+
+});
 
 // Color-pickers
 

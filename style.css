@@ -415,8 +415,15 @@ html {
   font-family: 'poppins';
 }
 
+.cart-btn-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
 .btn-primary {
-  width: 100%;
+  width: 70%;
   padding: 16px;
   background: black;
   color: white;
@@ -436,7 +443,7 @@ html {
 }
 
 .btn-secondary {
-  width: 100%;
+  width: 70%;
   padding: 16px;
   background: #fff;
   border: 2px solid black;
@@ -462,6 +469,23 @@ html {
 .benefits li {
   margin-bottom: 6px;
 }
+
+/*Text next to btn-primary*/
+.added-message {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: 10px;
+  color: #334338;
+  font-weight: 600;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.added-message.visible {
+  opacity: 1;
+}
+
 
 /*Color-pickers*/
 .color-options {

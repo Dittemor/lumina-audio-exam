@@ -356,7 +356,14 @@ ul {
   margin-top: 20px;
 }
 
-.cta-btn {
+.cart-btn-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+} 
+
+.cta-button { 
   width: 60%;
   padding: 16px;
   background: black;
@@ -370,7 +377,7 @@ ul {
   align-items: baseline;
 }
 
-.cta-btn:hover { 
+.cta-button:hover { 
   background: #fff;
   color: #000000;
   border: 2px solid black;
@@ -389,6 +396,21 @@ ul {
   display: block;
 }
 
+/*Text next to btn-primary*/
+.added-message {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: 10px;
+  color: #334338;
+  font-weight: 600;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.added-message.visible {
+  opacity: 1;
+}
 
 /*Fold-menu section*/
 .fold-menu {
