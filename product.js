@@ -1,5 +1,4 @@
 // Search input
-
 const searchContainer = document.querySelector('.search-container');
 const searchBtn = document.querySelector('.search-btn');
 
@@ -16,8 +15,47 @@ document.addEventListener('click', (e) => {
     }
 }); 
 
-// Color-pickers
+//Login dropdown
+  const personBtn = document.querySelector(".person-btn");
+  const loginDropdown = document.getElementById("loginDropdown");
 
+  personBtn.addEventListener("click", () => {
+    loginDropdown.style.display =
+      loginDropdown.style.display === "block" ? "none" : "block";
+  });
+
+ 
+  document.addEventListener("click", (e) => {
+    if (!personBtn.contains(e.target) && !loginDropdown.contains(e.target)) {
+      loginDropdown.style.display = "none";
+    }
+  });
+
+  // Cart dropdown
+  const cartBtn = document.querySelector(".cart-btn");
+  const cartDropdown = document.getElementById("cartDropdown");
+  const exploreBtn = document.getElementById("exploreBtn");
+
+  cartBtn.addEventListener("click", () => {
+    cartDropdown.style.display =
+      cartDropdown.style.display === "block" ? "none" : "block";
+  });
+
+
+  document.addEventListener("click", (e) => {
+    if (!cartBtn.contains(e.target) && !cartDropdown.contains(e.target)) {
+      cartDropdown.style.display = "none";
+    }
+  });
+
+
+  exploreBtn.addEventListener("click", () => {
+    const productSection = document.getElementById("product-section"); 
+    productSection.scrollIntoView({ behavior: "smooth" });
+  });
+
+
+// Color-pickers
 const dots = document.querySelectorAll(".color-dot");
 const speakerImage = document.getElementById("product-image");
 const colorName = document.getElementById('colorName'); 
@@ -57,3 +95,12 @@ menuTitles.forEach(header => {
     }
   });
 });
+
+// Newsletter button
+  const btn = document.getElementById("nl-button");
+  const emailField = document.getElementById("nl-email");
+
+  btn.addEventListener("click", function (e) {
+    e.preventDefault(); 
+    emailField.style.display = "block";
+  });

@@ -165,6 +165,75 @@ html {
     opacity: 1;
 }
 
+/*Login-input*/ 
+.login-dropdown {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  width: 180px;
+  display: none; 
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  z-index: 999;
+}
+
+.login-dropdown input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.login-dropdown .login-btn,
+.login-dropdown .signup-btn {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 6px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.login-dropdown .login-btn {
+  background: #000;
+  color: white;
+}
+
+.login-dropdown .signup-btn {
+  background: #ddd;
+}
+
+/*Cart-dropdown*/
+.cart-dropdown {
+  position: absolute;
+  top: 50px; 
+  right: 0;
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  width: 180px;
+  display: none; 
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  z-index: 999;
+  text-align: center;
+}
+
+.cart-dropdown p {
+  margin-bottom: 10px;
+}
+
+.cart-dropdown .explore-btn {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+  background: #000;
+  color: white;
+  cursor: pointer;
+}
 
 
 /*Hero*/
@@ -234,9 +303,9 @@ html {
 
 
 .hero-btn:hover {
-    background: rgb(22, 22, 22);
-    border: 2px solid rgb(22, 22, 22);
-    color: rgb(255, 255, 255);
+    background: rgb(228, 228, 228);
+    border: 2px solid rgb(228, 228, 228);
+    color: rgb(0, 0, 0);
 }
 
 .hero-btn-wrapper {
@@ -259,7 +328,7 @@ html {
 .hero-price {
     color: white;
     margin-top: 12px;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     font-family: 'inter';
 }
 
@@ -532,8 +601,7 @@ html {
 }
 
 .prev { left: 200px; }
-.next { right: 200px; }
-
+.next { right: 200px; } 
 
 .reviews-btn:hover {
     background-color: rgba(68, 67, 67, 0.784);

@@ -141,6 +141,76 @@ body {
     opacity: 1;
 }
 
+/*Login-input*/ 
+.login-dropdown {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  width: 180px;
+  display: none; 
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  z-index: 999;
+}
+
+.login-dropdown input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.login-dropdown .login-btn,
+.login-dropdown .signup-btn {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 6px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.login-dropdown .login-btn {
+  background: #000;
+  color: white;
+}
+
+.login-dropdown .signup-btn {
+  background: #ddd;
+}
+
+/*Cart-dropdown*/
+.cart-dropdown {
+  position: absolute;
+  top: 50px; 
+  right: 0;
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  width: 180px;
+  display: none; 
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  z-index: 999;
+  text-align: center;
+}
+
+.cart-dropdown p {
+  margin-bottom: 10px;
+}
+
+.cart-dropdown .explore-btn {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+  background: #000;
+  color: white;
+  cursor: pointer;
+}
+
 /*Back button*/
 .back-button {
   cursor: pointer;
